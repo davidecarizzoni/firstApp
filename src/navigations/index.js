@@ -5,7 +5,9 @@ import HomeNavigator from './HomeNavigator';
 import {GlobalContext} from '../context/Provider';
 
 const AppNavContainer = () => {
-  const isLoggedIn = true;
+  const {
+    authState: {isLoggedIn},
+  } = useContext(GlobalContext);
   const state = useContext(GlobalContext);
 
   console.log({state});
