@@ -6,7 +6,9 @@ import Register from '../screens/onBoarding/Register';
 const AuthNavigator = () => {
   const AuthStack = createStackNavigator();
   return (
-    <AuthStack.Navigator initialRouteName={'Login'}>
+    <AuthStack.Navigator
+      initialRouteName={'Login'}
+      screenOptions={{headerShown: false}}>
       <AuthStack.Screen name={'Login'} component={Login} />
       <AuthStack.Screen name={'Register'} component={Register} />
     </AuthStack.Navigator>
