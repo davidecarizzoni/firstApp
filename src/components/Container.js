@@ -12,6 +12,7 @@ const Container = ({style, children}) => {
 const styles = StyleSheet.create({
   wrapper: {
     padding: 20,
+    height: '100%',
   },
 });
 

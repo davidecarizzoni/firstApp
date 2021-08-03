@@ -2,10 +2,11 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import AppNavContainer from './src/navigations';
 import GlobalProvider from './src/context/Provider';
+import {Dimensions} from 'react-native';
 
 const App = () => {
   return (
-    <GlobalProvider style={{height: '100%'}}>
+    <GlobalProvider style={{height: Dimensions.get('window').height}}>
       <AppNavContainer />
     </GlobalProvider>
   );
