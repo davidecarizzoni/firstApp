@@ -20,7 +20,7 @@ const Login = props => {
           style={styles.logoImage}
         />
       </View>
-      <View style={{padding: 5}}>
+      <View style={{padding: 5, marginTop: '10%'}}>
         <TextBold style={styles.title}> Welcome to my first App</TextBold>
         <Text style={styles.subtitle}> Please login here </Text>
         <View>
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     alignSelf: 'center',
+    marginTop: 50,
   },
   title: {
     alignSelf: 'center',
